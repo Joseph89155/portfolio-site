@@ -32,8 +32,8 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 w-full p-4 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white dark:bg-gray-900 shadow-lg"
-          : "bg-transparent dark:bg-transparent"
+          ? "bg-white dark:bg-gray-800 shadow-lg text-gray-900 dark:text-white"
+          : "bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
@@ -44,26 +44,24 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul className="flex space-x-6">
-          <li>
-            <Link to="/" className="hover:text-gray-400">Home</Link>
-          </li>
-          <li>
-            <Link to="/projects" className="hover:text-gray-400">Projects</Link>
-          </li>
-          <li>
-            <Link to="/about" className="hover:text-gray-400">About</Link>
-          </li>
-          <li>
-            <Link to="/contact" className="hover:text-gray-400">Contact</Link>
-          </li>
+          {["Home", "Projects", "About", "Contact"].map((text, index) => (
+            <li key={index}>
+              <Link
+                to={`/${text.toLowerCase()}`}
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+              >
+                {text}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Dark Mode Toggle Button */}
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="ml-4 bg-gray-200 dark:bg-gray-800 text-black dark:text-white p-2 rounded"
+          className="ml-4 bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-white p-2 rounded transition-all duration-300 hover:scale-105"
         >
-          {darkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
+          {darkMode ? "🌙 " : "☀️ "}
         </button>
       </div>
     </nav>

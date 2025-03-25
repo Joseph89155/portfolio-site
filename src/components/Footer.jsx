@@ -2,8 +2,8 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-6 text-center">
-      <div className="flex justify-center space-x-6 mb-4">
+    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-4 text-center">
+      <div className="flex justify-center space-x-6">
         <a
           href="https://github.com/your-profile"
           target="_blank"
@@ -29,7 +29,7 @@ const Footer = () => {
           <FaTwitter className="text-2xl" />
         </a>
       </div>
-      <p className="text-sm">&copy; 2025 My Portfolio. All rights reserved.</p>
+      <p className="text-sm mt-2">&copy; 2025 My Portfolio. All rights reserved.</p>
     </footer>
   );
 };
