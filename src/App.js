@@ -11,17 +11,19 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* Ensures scrolling to top on route change */}
       <Navbar />
-      <div className="flex flex-col min-h-screen"> {/* Ensures footer stays at the bottom */}
-        <main className="flex-grow pt-20"> {/* Prevents content from hiding under navbar */}
+      <div className="flex flex-col min-h-screen">
+        <main className="flex-grow pt-20">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} /> {/* ✅ Fix: Add /home route */}
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        <Footer /> {/* Add Footer here */}
+        <Footer />
       </div>
     </Router>
   );

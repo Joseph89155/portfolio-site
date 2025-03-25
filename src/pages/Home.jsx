@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Testimonials from "../components/Testimonials";
+import profilePic from "../assets/profile.jpg"; // Import Profile Picture
 
 const Home = () => {
   return (
@@ -12,19 +13,33 @@ const Home = () => {
         transition={{ duration: 0.8 }}
         className="relative flex flex-col items-center justify-center text-center py-24 px-6"
       >
+        {/* Profile Picture */}
+        <motion.img
+          src={profilePic}
+          alt="Profile"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="w-56 h-56 rounded-full border-4 border-blue-500 shadow-lg"
+        />
+
+
+        {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold"
+          className="text-4xl md:text-6xl font-extrabold mt-6"
         >
           Welcome to My Portfolio
         </motion.h1>
+
         <p className="text-lg md:text-xl mt-4 max-w-2xl">
           Showcasing my journey in <span className="font-semibold">Programming</span>,{" "}
           <span className="font-semibold">Data Science</span>, and{" "}
           <span className="font-semibold">Data Analysis</span>.
         </p>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
