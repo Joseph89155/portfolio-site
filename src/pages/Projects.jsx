@@ -1,32 +1,43 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import CountUp from "react-countup";
+import Tilt from "react-parallax-tilt";
+import { FaTimes } from "react-icons/fa"; // ✅ Fixed import
+import { BsSearch } from "react-icons/bs"; // Search icon
+import portfolioImg from "../assets/portfolio.jpg";
+import chatbotImg from "../assets/chatbot.jpg";
+import dashboardImg from "../assets/dashboard.jpg";
 
+// Projects Data
 const projects = [
   {
     id: 1,
     title: "Portfolio Website",
     category: "Web Dev",
-    image: "/assets/portfolio.png",
-    description: "A sleek and responsive portfolio showcasing my skills and projects.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
+    description:
+      "A sleek, mobile-friendly portfolio built using React and Tailwind CSS. Features dark mode, animations, and an optimized UI.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion"],
+    image: portfolioImg,
     link: "https://github.com/yourusername/portfolio",
   },
   {
     id: 2,
     title: "AI Chatbot",
     category: "AI",
-    image: "/assets/chatbot.png",
-    description: "A chatbot powered by OpenAI’s GPT model, providing intelligent responses.",
-    technologies: ["Python", "OpenAI API", "Flask"],
+    description:
+      "A chatbot powered by OpenAI’s GPT model, capable of providing intelligent responses in real time.",
+    techStack: ["Python", "OpenAI API", "Flask"],
+    image: chatbotImg,
     link: "https://github.com/yourusername/ai-chatbot",
   },
   {
     id: 3,
     title: "Data Analysis Dashboard",
     category: "Data Science",
-    image: "/assets/dashboard.png",
-    description: "An interactive dashboard for visualizing large datasets effectively.",
-    technologies: ["Python", "Pandas", "Matplotlib"],
+    description:
+      "An interactive dashboard for visualizing datasets with real-time analytics and graph rendering using Dash.",
+    techStack: ["Python", "Pandas", "Dash"],
+    image: dashboardImg,
     link: "https://github.com/yourusername/data-dashboard",
   },
 ];
@@ -34,121 +45,177 @@ const projects = [
 const categories = ["All", "Web Dev", "Data Science", "AI"];
 
 const Projects = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredProjects =
-    selectedCategory === "All"
-      ? projects
-      : projects.filter((project) => project.category === selectedCategory);
+  // Featured Project (first project)
+  const featuredProject = projects[0];
+
+  // Filtered projects based on category & search
+  const filteredProjects = projects.filter(
+    (project) =>
+      (activeCategory === "All" || project.category === activeCategory) &&
+      project.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
-    <div className="min-h-screen pt-20 px-6 bg-white dark:bg-gray-900 transition-colors duration-300">
-      <h1 className="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-8">
-        My Projects
-      </h1>
+    <div className="pt-20 min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-white transition-all duration-300">
+      <div className="container mx-auto px-6">
+        {/* Section Title */}
+        <h2 className="text-4xl font-bold text-center">My Projects</h2>
+        <p className="text-center text-gray-500 dark:text-gray-400 mt-2">
+          A collection of my best works showcasing my skills in web development, AI, and data science.
+        </p>
 
-      {/* Category Filters */}
-      <div className="flex justify-center space-x-3 mb-10">
-        {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 rounded-lg text-sm font-semibold transition 
-              ${
-                selectedCategory === category
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-200 dark:bg-gray-700 dark:text-white hover:bg-gray-300"
-              }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+        {/* 🔍 Search & Filter */}
+        <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
+          <div className="relative">
+            <BsSearch className="absolute left-3 top-3 text-gray-500 dark:text-gray-400" />
+            <input
+              type="text"
+              placeholder="Search projects..."
+              className="pl-10 pr-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+          <div className="flex gap-4">
+            {categories.map((category) => (
+              <motion.button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-4 py-2 rounded-full font-semibold transition-transform duration-200 ${
+                  activeCategory === category
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white"
+                } hover:scale-105 hover:bg-blue-500 hover:text-white`}
+                whileTap={{ scale: 0.95 }}
+              >
+                {category}
+              </motion.button>
+            ))}
+          </div>
+        </div>
 
-      {/* Projects Grid */}
-      <motion.div 
-        className="grid md:grid-cols-3 gap-8"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        {filteredProjects.map((project) => (
-          <motion.div
-            key={project.id}
-            onClick={() => setSelectedProject(project)}
-            className="cursor-pointer bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-all 
-              hover:scale-105 hover:shadow-xl hover:border hover:border-blue-500 relative"
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0px 0px 15px rgba(0, 123, 255, 0.5)", // Blue Glow Effect
-            }}
-          >
-            <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-4" />
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h2>
-            <p className="text-gray-600 dark:text-gray-300">{project.category}</p>
-          </motion.div>
-        ))}
-      </motion.div>
-
-      {/* Modal Pop-up */}
-      <AnimatePresence>
-        {selectedProject && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-6 z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedProject(null)}
-          >
-            <motion.div
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg text-center"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }} // Zoom-out effect when closing
-              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
-            >
+        {/* 🌟 Featured Project */}
+        <div className="mt-12 p-6 bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg text-center">
+          <h3 className="text-2xl font-semibold">Featured Project</h3>
+          <Tilt>
+            <div className="mt-4">
               <img
-                src={selectedProject.image}
-                alt={selectedProject.title}
-                className="w-full h-40 object-cover rounded-md mb-4"
+                src={featuredProject.image}
+                alt={featuredProject.title}
+                className="w-full md:w-1/2 mx-auto rounded-lg shadow-lg"
               />
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{selectedProject.title}</h2>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">{selectedProject.description}</p>
-              
-              {/* Tech Stack */}
-              <div className="flex justify-center gap-2 mt-4">
-                {selectedProject.technologies.map((tech, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-lg"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              {/* Project Link */}
+              <h3 className="text-xl font-bold mt-4">{featuredProject.title}</h3>
+              <p className="text-gray-500 dark:text-gray-400">{featuredProject.description}</p>
               <a
-                href={selectedProject.link}
+                href={featuredProject.link}
+                className="text-blue-500 dark:text-blue-400 font-semibold hover:underline mt-2 inline-block"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mt-4 text-blue-500 font-medium hover:underline"
               >
                 View Project →
               </a>
-
-              {/* Close Button */}
-              <button
-                onClick={() => setSelectedProject(null)}
-                className="mt-6 px-5 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+            </div>
+          </Tilt>
+        </div>
+        
+        {/* 🔄 Project Grid */}
+        <motion.div layout className="grid md:grid-cols-3 gap-6 mt-10">
+          <AnimatePresence>
+            {filteredProjects.map((project) => (
+              <Tilt key={project.id} tiltMaxAngleX={10} tiltMaxAngleY={10}>
+                <motion.div
+                  layout
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-lg cursor-pointer hover:shadow-blue-500/50 transition-transform duration-300 transform hover:scale-105"
+                  onClick={() => setSelectedProject(project)}
+                >
+                  <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-lg" />
+                  <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
+                  <p className="text-gray-500 dark:text-gray-400">{project.category}</p>
+                  {/* Tech Stack */}
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {project.techStack.map((tech, index) => (
+                      <span key={index} className="bg-blue-200 dark:bg-blue-800 text-blue-900 dark:text-white px-3 py-1 rounded-full text-sm">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </Tilt>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+        {/* 🔳 Modal for Project Details */}
+        <AnimatePresence>
+          {selectedProject && (
+            <motion.div
+              className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedProject(null)}
+            >
+              <motion.div
+                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg w-11/12 md:w-1/2"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.8, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                onClick={(e) => e.stopPropagation()}
               >
-                Close
-              </button>
+                <div className="flex justify-between items-center">
+                  <h2 className="text-2xl font-bold">{selectedProject.title}</h2>
+                  <button onClick={() => setSelectedProject(null)} className="text-gray-500 hover:text-red-500">
+                    <FaTimes size={24} />
+                  </button>
+                </div>
+                <img src={selectedProject.image} alt={selectedProject.title} className="w-full mt-4 rounded-lg" />
+                <p className="mt-4 text-gray-700 dark:text-gray-300">{selectedProject.description}</p>
+                <div className="mt-4 flex gap-2">
+                  {selectedProject.techStack.map((tech, index) => (
+                    <span key={index} className="bg-blue-200 dark:bg-blue-800 text-blue-900 dark:text-white px-3 py-1 rounded-full text-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href={selectedProject.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center bg-blue-600 text-white py-2 mt-4 rounded-lg hover:bg-blue-700"
+                >
+                  View Project →
+                </a>
+              </motion.div>
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>
+        {/* 📊 Animated Project Stats */}
+        <div className="text-center mt-12">
+          <h3 className="text-3xl font-semibold">Project Statistics</h3>
+          <div className="flex justify-center gap-10 mt-4">
+            <div>
+              <span className="text-4xl font-bold text-blue-600 dark:text-blue-400">
+                <CountUp end={20} duration={3} />+
+              </span>
+              <p className="text-gray-500 dark:text-gray-400">Projects Completed</p>
+            </div>
+            <div>
+              <span className="text-4xl font-bold text-blue-600 dark:text-blue-400">
+                <CountUp end={5} duration={3} />+
+              </span>
+              <p className="text-gray-500 dark:text-gray-400">Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
