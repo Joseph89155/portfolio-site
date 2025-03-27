@@ -154,49 +154,51 @@ const Projects = () => {
         </motion.div>
         {/* 🔳 Modal for Project Details */}
         <AnimatePresence>
-          {selectedProject && (
-            <motion.div
-              className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setSelectedProject(null)}
-            >
-              <motion.div
-                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg w-11/12 md:w-1/2"
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.8, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <div className="flex justify-between items-center">
-                  <h2 className="text-2xl font-bold">{selectedProject.title}</h2>
-                  <button onClick={() => setSelectedProject(null)} className="text-gray-500 hover:text-red-500">
-                    <FaTimes size={24} />
-                  </button>
-                </div>
-                <img src={selectedProject.image} alt={selectedProject.title} className="w-full mt-4 rounded-lg" />
-                <p className="mt-4 text-gray-700 dark:text-gray-300">{selectedProject.description}</p>
-                <div className="mt-4 flex gap-2">
-                  {selectedProject.techStack.map((tech, index) => (
-                    <span key={index} className="bg-blue-200 dark:bg-blue-800 text-blue-900 dark:text-white px-3 py-1 rounded-full text-sm">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <a
-                  href={selectedProject.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center bg-blue-600 text-white py-2 mt-4 rounded-lg hover:bg-blue-700"
-                >
-                  View Project →
-                </a>
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+  {selectedProject && (
+    <motion.div
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={() => setSelectedProject(null)}
+    >
+      <motion.div
+        className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg w-10/12 md:w-1/3"
+        initial={{ scale: 0.85, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.85, opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex justify-between items-center">
+          <h2 className="text-xl font-bold">{selectedProject.title}</h2>
+          <button onClick={() => setSelectedProject(null)} className="text-gray-500 hover:text-red-500">
+            <FaTimes size={20} />
+          </button>
+        </div>
+        <div className="flex flex-col items-center mt-4">
+          <img src={selectedProject.image} alt={selectedProject.title} className="w-full max-w-xs rounded-lg" />
+          <p className="mt-3 text-gray-700 dark:text-gray-300 text-sm text-center">{selectedProject.description}</p>
+        </div>
+        <div className="mt-3 flex flex-wrap justify-center gap-2">
+          {selectedProject.techStack.map((tech, index) => (
+            <span key={index} className="bg-blue-200 dark:bg-blue-800 text-blue-900 dark:text-white px-3 py-1 rounded-full text-xs">
+              {tech}
+            </span>
+          ))}
+        </div>
+        <a
+          href={selectedProject.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-center bg-blue-600 text-white py-2 mt-4 rounded-lg hover:bg-blue-700 text-sm"
+        >
+          View Project →
+        </a>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
         {/* 📊 Animated Project Stats */}
         <div className="text-center mt-12">
           <h3 className="text-3xl font-semibold">Project Statistics</h3>
