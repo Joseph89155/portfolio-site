@@ -11,8 +11,18 @@ const Home = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative flex flex-col items-center justify-center text-center py-24 px-6"
+        className="relative flex flex-col items-center justify-center text-center py-24 px-6 overflow-hidden"
       >
+        {/* Background Effects */}
+        <div className="absolute inset-0 -z-10">
+          {/* Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 opacity-20 blur-3xl rounded-full"></div>
+
+          {/* Decorative Circles */}
+          <div className="absolute w-96 h-96 rounded-full bg-blue-400/40 blur-[100px] -top-20 -left-20 animate-pulse"></div>
+          <div className="absolute w-96 h-96 rounded-full bg-indigo-400/40 blur-[100px] -bottom-20 -right-20 animate-pulse"></div>
+        </div>
+
         {/* Profile Picture */}
         <motion.img
           src={profilePic}
@@ -20,36 +30,35 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="w-56 h-56 rounded-full border-4 border-blue-500 shadow-lg"
+          className="w-56 h-56 rounded-full border-4 border-blue-500 shadow-lg z-10"
         />
-
 
         {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold mt-6"
+          className="text-4xl md:text-6xl font-extrabold mt-6 bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text"
         >
-          Welcome to My Portfolio
+          Crafting Digital Experiences
         </motion.h1>
 
         <p className="text-lg md:text-xl mt-4 max-w-2xl">
-          Showcasing my journey in <span className="font-semibold">Programming</span>,{" "}
-          <span className="font-semibold">Data Science</span>, and{" "}
-          <span className="font-semibold">Data Analysis</span>.
+          Passionate about <span className="font-semibold text-blue-600">Programming</span>,{" "}
+          <span className="font-semibold text-indigo-600">Data Science</span>, and{" "}
+          <span className="font-semibold text-purple-600">Data Analysis</span>.
         </p>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-6"
+          className="mt-6 z-10"
         >
           <Link
             to="/projects"
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg 
-            hover:bg-blue-700 hover:shadow-blue-500/50 transition duration-300"
+            className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg 
+            hover:from-purple-600 hover:to-blue-600 hover:shadow-indigo-500/50 transform hover:scale-105 transition duration-300"
           >
             View My Work
           </Link>
