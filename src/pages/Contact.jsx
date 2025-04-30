@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const testimonials = [
-  { name: "John Doe", feedback: "Amazing experience! Highly recommend." },
+  { name: "John Kennedy", feedback: "Amazing experience! Highly recommend." },
   { name: "Jane Smith", feedback: "Professional and efficient. Will collaborate again!" },
-  { name: "Alex Johnson", feedback: "Impressed with the quality and dedication." },
+  { name: "Michael Kelvins", feedback: "Impressed with the quality and dedication." },
 ];
 
 const faqs = [
@@ -121,15 +121,15 @@ const Contact = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3 text-gray-600 dark:text-gray-300">
               <FaPhoneAlt className="text-indigo-600 dark:text-teal-400" />
-              <span>+123-456-7890</span>
+              <span>+254-7620-4134</span>
             </div>
             <div className="flex items-center space-x-3 text-gray-600 dark:text-gray-300">
               <FaEnvelope className="text-indigo-600 dark:text-teal-400" />
-              <span>hello@example.com</span>
+              <span>josephmaina.kj.com</span>
             </div>
             <div className="flex items-center space-x-3 text-gray-600 dark:text-gray-300">
               <FaMapMarkerAlt className="text-indigo-600 dark:text-teal-400" />
-              <span>123 Anywhere St., Any City, ST 12345</span>
+              <span>123 Nairobi St., Nairobi, ST 12345</span>
             </div>
           </div>
 

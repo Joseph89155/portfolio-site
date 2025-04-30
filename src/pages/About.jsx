@@ -46,7 +46,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold">Who Am I?</h3>
             <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm a passionate developer with experience in building high-quality web applications. I love working on innovative projects, and my expertise spans from frontend design to backend development.
+              Joseph is a passionate developer with experience in building high-quality web applications. He love working on innovative projects, and my expertise spans from frontend design to backend development, from Data Science to Data Analytics.
             </p>
             {/* Download Resume Button */}
             <a

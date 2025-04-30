@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-4 text-center">
       <div className="flex justify-center space-x-6">
         <a
-          href="https://github.com/your-profile"
+          href="https://github.com/Joseph89155"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-600 dark:hover:text-gray-400 transition duration-300 transform hover:scale-110"
