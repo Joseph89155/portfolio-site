@@ -1,20 +1,26 @@
 export const experienceData = [
+  {
+    title: "Data Anayst Assosiate Intern",
+    company: "Excelerate",
+    year: "2024 - Present",
+    description: "Transformed raw data into actionable insights by creating interactive dashboard that served as a powerful tool.",
+  },
     {
-      title: "Full-Stack Developer",
-      company: "Tech Company",
-      year: "2022 - Present",
+      title: "Full-Stack Developer Intern",
+      company: "Gertrudes Hospital",
+      year: "2024 - 2025",
       description: "Developed scalable web applications using React, Node.js, and MongoDB.",
     },
     {
-      title: "Frontend Developer",
-      company: "Startup Inc.",
-      year: "2020 - 2022",
-      description: "Designed and implemented responsive UIs with React and Tailwind CSS.",
+      title: "Data Scientist Student",
+      company: "KCA University.",
+      year: "2022 - 2024",
+      description: "collecting, analyzing, and interpreting complex data to extract insights and make informed decisions.",
     },
     {
       title: "Bachelor’s in Computer Science",
-      company: "XYZ University",
-      year: "2016 - 2020",
+      company: "KCA University",
+      year: "2022 - 2024",
       description: "Graduated with a focus on software development and data structures.",
     },
   ];

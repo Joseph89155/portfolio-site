@@ -55,22 +55,22 @@ const Achievements = () => {
 
       {/* Modal for Certificate View */}
       {selectedCertificate && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-md w-full relative">
-            <button
-              onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-700 dark:text-gray-300 text-xl"
-            >
-              ✖
-            </button>
-            <img
-              src={selectedCertificate}
-              alt="Certificate"
-              className="w-full h-auto rounded-md"
-            />
-          </div>
-        </div>
-      )}
+  <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4 overflow-auto">
+    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg max-w-5xl w-full relative">
+      <button
+        onClick={closeModal}
+        className="absolute top-2 right-2 text-gray-700 dark:text-gray-300 text-xl"
+      >
+        ✖
+      </button>
+      <img
+        src={selectedCertificate}
+        alt="Certificate"
+        className="max-w-full max-h-[80vh] mx-auto rounded-md"
+      />
+    </div>
+  </div>
+)}
     </div>
   );
 };

@@ -1,26 +1,47 @@
 // achievementsData.js
 
-import reactCert from "../assets/react-cert.jpg";
-import jsCourseCert from "../assets/js-course.jpg";
-import hackathonCert from "../assets/hackathon-cert.jpg";
+import BootcampCert from "../assets/Data Analytics Bootcamp.jpg";
+import AnalyticsCert from "../assets/Google Analytics for Beginners.jpg";
+import Analytics360Cert from "../assets/Google Analytics 360.jpg";
+import VisualizationCert from "../assets/Data Visualization with Python.jpg";
+import AnalysispythonCert from "../assets/Data Analysis with Python.jpg";
+import PythonCert from "../assets/Python for Beginners.jpg";
 
 export const achievementsData = [
   {
-    title: "Certified React Developer",
-    description: "Earned certification for advanced proficiency in React.js.",
+    title: "Data Analytics Bootcamp",
+    description: "Earned certification for Data Analysis with hands-on projects.",
     year: 2024,
-    certificate: reactCert, // Use imported image
+    certificate: BootcampCert,
   },
   {
-    title: "JavaScript Mastery Course",
-    description: "Completed an intensive JavaScript course with hands-on projects.",
+    title: "Google Analytics for Beginners",
+    description: "Completed an intensive Google Analytics for Beginners course with hands-on projects.",
     year: 2023,
-    certificate: jsCourseCert,
+    certificate: AnalyticsCert,
   },
   {
-    title: "Hackathon Winner",
-    description: "Won first place in a national hackathon competition.",
-    year: 2022,
-    certificate: hackathonCert,
+    title: "Google Analytics 360",
+    description: "Completed an intensive Google Analytics 360 course from Google.",
+    year: 2023,
+    certificate: Analytics360Cert,
+  },
+  {
+    title: "Data Visualization with Python",
+    description: "Successfully completed and received certification from CognitiveClass.ai.",
+    year: 2024,
+    certificate: VisualizationCert,
+  },
+  {
+    title: "Data Analysis with Python",
+    description: "Successfully completed and received certification from CognitiveClass.ai.",
+    year: 2024,
+    certificate: AnalysispythonCert,
+  },
+  {
+    title: "Python for Beginners",
+    description: "Successfully completed and received certification from Simplilearn.",
+    year: 2024,
+    certificate: PythonCert,
   },
 ];
