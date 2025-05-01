@@ -1,6 +1,6 @@
 export const experienceData = [
   {
-    title: "Data Anayst Assosiate Intern",
+    title: "Data Analyst Associate Intern",
     company: "Excelerate",
     year: "2024 - Present",
     description: "Transformed raw data into actionable insights by creating interactive dashboard that served as a powerful tool.",
@@ -12,7 +12,7 @@ export const experienceData = [
       description: "Developed scalable web applications using React, Node.js, and MongoDB.",
     },
     {
-      title: "Data Scientist Student",
+      title: "Data Analyst & Scientist Student",
       company: "KCA University.",
       year: "2022 - 2024",
       description: "collecting, analyzing, and interpreting complex data to extract insights and make informed decisions.",

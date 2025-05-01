@@ -13,7 +13,7 @@ const Footer = () => {
           <FaGithub className="text-2xl" />
         </a>
         <a
-          href="https://linkedin.com/in/your-profile"
+          href="https://linkedin.com/in/joseph-maina-b58783363"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 transform hover:scale-110"

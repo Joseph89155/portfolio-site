@@ -125,7 +125,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center space-x-3 text-gray-600 dark:text-gray-300">
               <FaEnvelope className="text-indigo-600 dark:text-teal-400" />
-              <span>josephmaina.kj.com</span>
+              <span>jossymaina89@gmail.com</span>
             </div>
             <div className="flex items-center space-x-3 text-gray-600 dark:text-gray-300">
               <FaMapMarkerAlt className="text-indigo-600 dark:text-teal-400" />

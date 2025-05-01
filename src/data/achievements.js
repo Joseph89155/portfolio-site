@@ -1,13 +1,17 @@
-// achievementsData.js
-
+import DataAnalyticsCert from "../assets/Data Analytics.jpg"; // ✅ new
 import BootcampCert from "../assets/Data Analytics Bootcamp.jpg";
 import AnalyticsCert from "../assets/Google Analytics for Beginners.jpg";
-import Analytics360Cert from "../assets/Google Analytics 360.jpg";
 import VisualizationCert from "../assets/Data Visualization with Python.jpg";
 import AnalysispythonCert from "../assets/Data Analysis with Python.jpg";
-import PythonCert from "../assets/Python for Beginners.jpg";
+import SQLCert from "../assets/sql.jpg"; // ✅ new
 
 export const achievementsData = [
+  {
+    title: "Data Analytics Certificate",
+    description: "Completed certification in Data Analytics fundamentals and applied analysis.",
+    year: 2024,
+    certificate: DataAnalyticsCert,
+  },
   {
     title: "Data Analytics Bootcamp",
     description: "Earned certification for Data Analysis with hands-on projects.",
@@ -19,12 +23,6 @@ export const achievementsData = [
     description: "Completed an intensive Google Analytics for Beginners course with hands-on projects.",
     year: 2023,
     certificate: AnalyticsCert,
-  },
-  {
-    title: "Google Analytics 360",
-    description: "Completed an intensive Google Analytics 360 course from Google.",
-    year: 2023,
-    certificate: Analytics360Cert,
   },
   {
     title: "Data Visualization with Python",
@@ -39,9 +37,9 @@ export const achievementsData = [
     certificate: AnalysispythonCert,
   },
   {
-    title: "Python for Beginners",
-    description: "Successfully completed and received certification from Simplilearn.",
+    title: "SQL for Data Analysis",
+    description: "Earned certification in SQL with hands-on data querying projects.",
     year: 2024,
-    certificate: PythonCert,
+    certificate: SQLCert,
   },
 ];
