@@ -12,16 +12,22 @@ export const experienceData = [
       description: "Developed scalable web applications using React, Node.js, and MongoDB.",
     },
     {
-      title: "Data Analyst & Scientist Student",
+      title: "Data Scientist, Analytics & Infosec Student",
       company: "KCA University.",
       year: "2022 - 2024",
       description: "collecting, analyzing, and interpreting complex data to extract insights and make informed decisions.",
     },
     {
-      title: "Bachelor’s in Computer Science",
+      title: "Bachelor’s in Information Security and Forensics",
       company: "KCA University",
       year: "2022 - 2024",
-      description: "Graduated with a focus on software development and data structures.",
+      description: "Graduated with a focus on Information Security, software development and data structures.",
+    },
+    {
+      title: "Diploma in Computer Science",
+      company: "Zetech University",
+      year: "2019 - 2021",
+      description: "Graduated with a focus on Web Development, Networking and Database Management.",
     },
   ];
   

@@ -6,12 +6,14 @@ import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 
 import portfolioImg from "../assets/portfolio.jpg";
+import inventoryImg from "../assets/inventory.jpg";
 import salesImg from "../assets/sales.jpg";
 import PowerBIImg from "../assets/powerbi.jpg";
 import TableauImg from "../assets/tableau.jpg";
 import MySQLImg from "../assets/mysql.jpg";
 import HealthImg from "../assets/health.jpg";
 import RiskImg from "../assets/risk.jpg";
+import HockeyImg from "../assets/hockey.jpg";
 import AQIImg from "../assets/aqi.jpg";
 
 // Projects Data
@@ -25,6 +27,16 @@ const projects = [
     techStack: ["React", "Tailwind CSS", "Framer Motion"],
     image: portfolioImg,
     link: "https://github.com/Joseph89155/portfolio-site",
+  },
+    {
+    id: 2,
+    title: "Inventory System",
+    category: "Web Dev",
+    description:
+      "A modern, user-friendly inventory management system built with React and tailwind CSS.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion"],
+    image: inventoryImg,
+    link: "https://github.com/Joseph89155/inventory-system",
   },
   {
     id: 2,
@@ -86,8 +98,18 @@ const projects = [
     image: RiskImg,
     link: "https://github.com/Joseph89155/Loan-Approval-Financial-Risk-Analysis-Python",
   },
-  {
+    {
     id: 8,
+    title: "Hockey Web Scraper",
+    category: "Data Science",
+    description:
+      "A Python project for scraping hockey stats using BeautifulSoup, Requests, and Pandas.",
+    techStack: ["Python", "Pandas", "Request", "BeautifulSoup"],
+    image: HockeyImg,
+    link: "https://github.com/Joseph89155/hockey-webscraper",
+  },
+  {
+    id: 9,
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:

@@ -53,7 +53,7 @@ const Contact = () => {
         
         {/* Form Section */}
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Contact Me</h2>
           <input
             type="text"
             name="name"

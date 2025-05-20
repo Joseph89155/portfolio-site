@@ -1,3 +1,5 @@
+import MachineLearningCert from "../assets/Machine Learning.jpg"; // ✅ new
+import DataScienceCert from "../assets/Data Science with Scala.jpg"; // ✅ new
 import DataAnalyticsCert from "../assets/Data Analytics.jpg"; // ✅ new
 import BootcampCert from "../assets/Data Analytics Bootcamp.jpg";
 import AnalyticsCert from "../assets/Google Analytics for Beginners.jpg";
@@ -7,9 +9,21 @@ import SQLCert from "../assets/sql.jpg"; // ✅ new
 
 export const achievementsData = [
   {
+    title: "Machine Learning Certificate",
+    description: "Successfully completed and received certification from CognitiveClass.ai.",
+    year: 2025,
+    certificate: MachineLearningCert,
+  },
+  {
+    title: "Data Science with Scala Certificate",
+    description: "Successfully completed and received certification from CognitiveClass.ai.",
+    year: 2025,
+    certificate: DataScienceCert,
+  },
+  {
     title: "Data Analytics Certificate",
     description: "Completed certification in Data Analytics fundamentals and applied analysis.",
-    year: 2024,
+    year: 2025,
     certificate: DataAnalyticsCert,
   },
   {
@@ -39,7 +53,7 @@ export const achievementsData = [
   {
     title: "SQL for Data Analysis",
     description: "Earned certification in SQL with hands-on data querying projects.",
-    year: 2024,
+    year: 2025,
     certificate: SQLCert,
   },
 ];
