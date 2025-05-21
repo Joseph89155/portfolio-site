@@ -46,7 +46,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold">Who Am I?</h3>
             <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              Joseph is a passionate developer with experience in building high-quality web applications. He love working on innovative projects, and my expertise spans from frontend design to backend development, from Data Science to Data Analytics.
+              Joseph helps organizations make data-driven decisions by transforming raw data into actionable insights through dashboards, predictive models, and scalable data solutions. With a strong foundation in both data analytics and data science, I use tools like Python, SQL, Power BI, and Excel to analyze trends, optimize performance, and communicate findings clearly to stakeholders. My exposure to full-stack technologies like React and Node.js also enables me to build and deploy web-based tools that make data more accessible and interactive across teams.
             </p>
             {/* Download Resume Button */}
             <a

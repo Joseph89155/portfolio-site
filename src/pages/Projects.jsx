@@ -23,7 +23,7 @@ const projects = [
     title: "Portfolio Website",
     category: "Web Dev",
     description:
-      "A sleek, mobile-friendly portfolio built using React and Tailwind CSS. Features dark mode, animations, and an optimized UI.",
+      "This portfolio is designed to reflect my professional background, technical abilities, and personal projects. It includes interactive UI elements, animations, and a clean layout to provide a great browsing experience.",
     techStack: ["React", "Tailwind CSS", "Framer Motion"],
     image: portfolioImg,
     link: "https://github.com/Joseph89155/portfolio-site",
@@ -40,40 +40,40 @@ const projects = [
   },
   {
     id: 2,
-    title: "Excel Dashboard",
+    title: "Bike Sales Excel Dashboard",
     category: "Data Analysis",
     description:
-      "This project focuses on analyzing bike sales data to uncover key customer insights and sales trends using Microsoft Excel",
+      "This project focuses on analyzing bike sales data to uncover key customer insights and sales trends. Using Microsoft Excel, I cleaned the raw data, performed analysis through pivot tables, and created an interactive dashboard. The goal is to provide actionable insights that can help improve marketing strategies and boost future bike sales.",
     techStack: ["Excel", "Dash"],
     image: salesImg,
     link: "https://github.com/Joseph89155/Bike-Sales-Excel-Dashboard",
   },
   {
     id: 3,
-    title: "Power BI Dashboard",
+    title: "Data Professional Survey Power BI Dashboard",
     category: "Data Analysis",
     description:
-      "An interactive Power BI dashboard analyzing survey data from data professionals worldwide.",
+      "This project focuses on analyzing survey data collected from data professionals globally. Using Microsoft Power BI, I cleaned the raw dataset, built a relational data model, and created an interactive dashboard. The goal is to uncover key insights about the countries data professionals come from, their job roles, salary trends, career difficulties, preferred programming languages, and work satisfaction levels.",
     techStack: ["Power BI", "Excel", "Dash"],
     image: PowerBIImg,
     link: "https://github.com/Joseph89155/Data-Professional-Survey-Power-BI-Analysis-Project",
   },
   {
     id: 4,
-    title: "Tableau Dashboard",
+    title: "Airbnb Tableau Dashboard",
     category: "Data Analysis",
     description:
-      "This Tableau project explores Airbnb listing data from Seattle to identify pricing patterns, revenue trends, and geographic insights.",
+      "This Tableau project focuses on analyzing Airbnb listing data to explore price variations, listing distribution, and revenue trends across Seattle. Using Tableau Desktop, I prepared, analyzed, and visualized the data to uncover valuable insights into pricing patterns by bedroom count, geographic location (zipcode), and seasonality throughout the year.",
     techStack: ["Tableau", "Excel", "Dash"],
     image: TableauImg,
     link: "https://github.com/Joseph89155/Airbnb-Tableau-Data-Analysis-Project",
   },
   {
     id: 5,
-    title: "MySQL Data Cleaning",
+    title: "Layoffs MySQL Data Cleaning",
     category: "Data Analysis",
     description:
-      "This SQL-based data cleaning project focuses on a dataset containing global company layoff records.",
+      "This SQL-based data cleaning project focuses on a dataset containing global company layoff records. Using MySQL, I cleaned and transformed raw CSV data to prepare it for accurate and efficient analysis. This is part of a hands-on portfolio series intended to strengthen SQL data wrangling skills for real-world business use cases.",
     techStack: ["MySQL", "Excel"],
     image: MySQLImg,
     link: "https://github.com/Joseph89155/Layoffs-Data-Cleaning-Project-MySQL-",
@@ -83,17 +83,17 @@ const projects = [
     title: "Health Analytics Full Project (SQL, BI, Excel)",
     category: "Data Analysis",
     description:
-      "Analyze data using SQL for insights and trends. Built dynamic Power BI and Excel dashboards to visualize patterns.",
+      "This project focuses on analyzing OCD (Obsessive-Compulsive Disorder) patient data to uncover trends and insights based on gender, ethnicity, obsession/compulsion types, and diagnosis timelines. Using SQL for data cleaning and exploration, the processed data was then visualized in both Power BI and Excel dashboards.",
     techStack: ["MySQL", "BI", "Excel"],
     image: HealthImg,
     link: "https://github.com/Joseph89155/Health-Analytics-Project-SQL-BI-Excel-",
   },
   {
     id: 7,
-    title: "Risk Analysis",
+    title: "Loan Approval & Financial Risk Analysis",
     category: "Data Science",
     description:
-      "A risk analysis project using Data Science Methodologies to assess loan approval decisions.",
+      "A risk analysis project using Data Science Methodologies to assess loan approval decisions. It explores customer demographics, credit history, income trends, and key factors influencing loan approvals to uncover patterns, assess risk, and determine key factors that influence whether a loan is approved or rejected..",
     techStack: ["Python", "Pandas", "Matplotlib", "Dash"],
     image: RiskImg,
     link: "https://github.com/Joseph89155/Loan-Approval-Financial-Risk-Analysis-Python",
@@ -103,7 +103,7 @@ const projects = [
     title: "Hockey Web Scraper",
     category: "Data Science",
     description:
-      "A Python project for scraping hockey stats using BeautifulSoup, Requests, and Pandas.",
+      "This project is a Python-based web scraper that extracts hockey team statistics from Site. It demonstrates how to automate data gathering using requests, BeautifulSoup, and pandas. The scraper collects structured data from multiple pages using pagination and stores it in a clean DataFrame, which is then exported to a .csv file fo further decision making.",
     techStack: ["Python", "Pandas", "Request", "BeautifulSoup"],
     image: HockeyImg,
     link: "https://github.com/Joseph89155/hockey-webscraper",
@@ -113,7 +113,7 @@ const projects = [
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:
-      "Analyze data and identify key patterns for insights that support public health awareness and environmental policy decisions.",
+      "A project on global air quality using Python. It explores air pollution trends across countries and cities, identifies top pollutants, and provides insights into the health and environmental impact of poor air quality.",
     techStack: ["Python", "Pandas", "Matplotlib", "Dash"],
     image: AQIImg,
     link: "https://github.com/Joseph89155/Global-Air-Quality-Index-AQ-Python",
