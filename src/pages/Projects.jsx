@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import CountUp from "react-countup";
 import Tilt from "react-parallax-tilt";
 import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
@@ -12,6 +11,7 @@ import PowerBIImg from "../assets/powerbi.jpg";
 import TableauImg from "../assets/tableau.jpg";
 import MySQLImg from "../assets/mysql.jpg";
 import HealthImg from "../assets/health.jpg";
+import CreditcardImg from "../assets/credit.jpg";
 import RiskImg from "../assets/risk.jpg";
 import HockeyImg from "../assets/hockey.jpg";
 import AQIImg from "../assets/aqi.jpg";
@@ -28,7 +28,7 @@ const projects = [
     image: portfolioImg,
     link: "https://github.com/Joseph89155/portfolio-site",
   },
-    {
+  {
     id: 2,
     title: "Inventory System",
     category: "Web Dev",
@@ -88,8 +88,18 @@ const projects = [
     image: HealthImg,
     link: "https://github.com/Joseph89155/Health-Analytics-Project-SQL-BI-Excel-",
   },
-  {
+    {
     id: 7,
+    title: "Credit Card Fraud Detection",
+    category: "Data Science",
+    description:
+      "This project demonstrates how machine learning techniques can be applied to detect fraudulent credit card transactions. We explore the use of Decision Tree and Support Vector Machine (SVM) models, with steps covering data preprocessing, exploratory data analysis (EDA), class imbalance handling, model training, evaluation, and interpretation.",
+    techStack: ["Python", "Pandas", "Matplotlib", "Seaborn", "Numpy", "Scikit-learn",],
+    image: CreditcardImg,
+    link: "https://github.com/Joseph89155/Credit-Card-Fraud-Detection-using-Scikit-Learn-and-Snap-ML",
+  },
+  {
+    id: 8,
     title: "Loan Approval & Financial Risk Analysis",
     category: "Data Science",
     description:
@@ -99,7 +109,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Loan-Approval-Financial-Risk-Analysis-Python",
   },
     {
-    id: 8,
+    id: 9,
     title: "Hockey Web Scraper",
     category: "Data Science",
     description:
@@ -109,7 +119,7 @@ const projects = [
     link: "https://github.com/Joseph89155/hockey-webscraper",
   },
   {
-    id: 9,
+    id: 10,
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:
