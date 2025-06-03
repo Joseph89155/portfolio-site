@@ -5,15 +5,20 @@ import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 
 import portfolioImg from "../assets/portfolio.jpg";
+import portfolioImg2 from "../assets/portfolio2.jpg";
+import employweImg from "../assets/employwe.jpg";
 import inventoryImg from "../assets/inventory.jpg";
 import salesImg from "../assets/sales.jpg";
 import PowerBIImg from "../assets/powerbi.jpg";
 import TableauImg from "../assets/tableau.jpg";
 import MySQLImg from "../assets/mysql.jpg";
 import HealthImg from "../assets/health.jpg";
+import TitanicImg from "../assets/titanic.jpg";
 import CreditcardImg from "../assets/credit.jpg";
+import ForecastImg from "../assets/forecast.jpg";
 import RiskImg from "../assets/risk.jpg";
 import HockeyImg from "../assets/hockey.jpg";
+import NetflixImg from "../assets/netflix.jpg";
 import AQIImg from "../assets/aqi.jpg";
 
 // Projects Data
@@ -30,6 +35,26 @@ const projects = [
   },
   {
     id: 2,
+    title: "Portfolio Website 2.0",
+    category: "Web Dev",
+    description:
+      "This is a personal website portfolio in which it has a home page, about page, projects page, experience and contact page.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion"],
+    image: portfolioImg2,
+    link: "https://github.com/Joseph89155/Portfolio-2.0",
+  },
+  {
+    id: 3,
+    title: "Employ We",
+    category: "Web Dev",
+    description:
+      "EmployWe is a lightweight, user-friendly desktop application designed to help HR personnel and managers manage employee onboarding seamlessly. It allows you to add, view, search, sort, and export employee records with an intuitive graphical interface.",
+    techStack: ["Python"],
+    image: employweImg,
+    link: "https://github.com/Joseph89155/EmployWe",
+  },
+  {
+    id: 4,
     title: "Inventory System",
     category: "Web Dev",
     description:
@@ -39,7 +64,7 @@ const projects = [
     link: "https://github.com/Joseph89155/inventory-system",
   },
   {
-    id: 2,
+    id: 5,
     title: "Bike Sales Excel Dashboard",
     category: "Data Analysis",
     description:
@@ -49,7 +74,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Bike-Sales-Excel-Dashboard",
   },
   {
-    id: 3,
+    id: 6,
     title: "Data Professional Survey Power BI Dashboard",
     category: "Data Analysis",
     description:
@@ -59,7 +84,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Data-Professional-Survey-Power-BI-Analysis-Project",
   },
   {
-    id: 4,
+    id: 7,
     title: "Airbnb Tableau Dashboard",
     category: "Data Analysis",
     description:
@@ -69,7 +94,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Airbnb-Tableau-Data-Analysis-Project",
   },
   {
-    id: 5,
+    id: 8,
     title: "Layoffs MySQL Data Cleaning",
     category: "Data Analysis",
     description:
@@ -79,7 +104,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Layoffs-Data-Cleaning-Project-MySQL-",
   },
   {
-    id: 6,
+    id: 9,
     title: "Health Analytics Full Project (SQL, BI, Excel)",
     category: "Data Analysis",
     description:
@@ -89,7 +114,17 @@ const projects = [
     link: "https://github.com/Joseph89155/Health-Analytics-Project-SQL-BI-Excel-",
   },
     {
-    id: 7,
+    id: 10,
+    title: "Titanic Survival EDA Project",
+    category: "Data Analysis",
+    description:
+      "This project is part of a self-guided data science learning journey to build hands-on skills in EDA. Using the Titanic dataset, we explore how different factors such as age, gender, ticket class, and port of embarkation affected survival chances during the tragic event.",
+    techStack: ["Python", "Pandas", "Seaborn"],
+    image: TitanicImg,
+    link: "https://github.com/Joseph89155/exploratory-data-analysis-titanic",
+  },
+  {
+    id: 11,
     title: "Credit Card Fraud Detection",
     category: "Data Science",
     description:
@@ -98,8 +133,18 @@ const projects = [
     image: CreditcardImg,
     link: "https://github.com/Joseph89155/Credit-Card-Fraud-Detection-using-Scikit-Learn-and-Snap-ML",
   },
+    {
+    id: 12,
+    title: "Covid-19 Forecasting and Geo Visualization",
+    category: "Data Science",
+    description:
+      "This project demonstrates a basic analysis of Big Data on the global spread of COVID-19. It covers data loading and cleaning, forecasting using linear regression, and creating interactive geo-visualizations of the virus's spread. The primary tool used is a Jupyter Notebook, leveraging Python libraries such as Pandas, NumPy, Scikit-learn, Statsmodels, Seaborn, and Plotly.",
+    techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Statsmodels", "Seaborn", "Plotly"],
+    image: ForecastImg,
+    link: "https://github.com/Joseph89155/COVID-19-Forecasting-and-Geo-Visualization",
+  },
   {
-    id: 8,
+    id: 13,
     title: "Loan Approval & Financial Risk Analysis",
     category: "Data Science",
     description:
@@ -108,8 +153,8 @@ const projects = [
     image: RiskImg,
     link: "https://github.com/Joseph89155/Loan-Approval-Financial-Risk-Analysis-Python",
   },
-    {
-    id: 9,
+  {
+    id: 14,
     title: "Hockey Web Scraper",
     category: "Data Science",
     description:
@@ -118,8 +163,18 @@ const projects = [
     image: HockeyImg,
     link: "https://github.com/Joseph89155/hockey-webscraper",
   },
+    {
+    id: 15,
+    title: "Netflix Data Wrangling",
+    category: "Data Science",
+    description:
+      "The goal of this project is to transform the messy Netflix dataset into a clean, consistent, and analysis-ready format",
+    techStack: ["Python", "Pandas", "Request"],
+    image: NetflixImg,
+    link: "https://github.com/Joseph89155/Netflix-Data-Wrangling",
+  },
   {
-    id: 10,
+    id: 16,
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:
