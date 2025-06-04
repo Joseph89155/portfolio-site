@@ -5,9 +5,11 @@ import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 
 import portfolioImg from "../assets/portfolio.jpg";
+import expenseImg from "../assets/expense.jpg"
 import portfolioImg2 from "../assets/portfolio2.jpg";
 import employweImg from "../assets/employwe.jpg";
 import inventoryImg from "../assets/inventory.jpg";
+import cafeImg from "../assets/cafe.jpg"
 import salesImg from "../assets/sales.jpg";
 import PowerBIImg from "../assets/powerbi.jpg";
 import TableauImg from "../assets/tableau.jpg";
@@ -35,6 +37,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "Personal expense tracker ",
+    category: "Web Dev",
+    description:
+      "The Personal Expense Tracker is a web application designed to help individuals manage their financial transactions efficiently. This application allows users to create, view, and manage their transactions in one central place. Additionally, users can visualize their spending and income trends through intuitive charts, providing a comprehensive overview of their financial habits.",
+    techStack: ["Python", "HTML", "CSS"],
+    image: expenseImg,
+    link: "https://github.com/Joseph89155/Personal-Expense-Tracker",
+  },
+  {
+    id: 3,
     title: "Portfolio Website 2.0",
     category: "Web Dev",
     description:
@@ -44,7 +56,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Portfolio-2.0",
   },
   {
-    id: 3,
+    id: 4,
     title: "Employ We",
     category: "Web Dev",
     description:
@@ -54,7 +66,7 @@ const projects = [
     link: "https://github.com/Joseph89155/EmployWe",
   },
   {
-    id: 4,
+    id: 5,
     title: "Inventory System",
     category: "Web Dev",
     description:
@@ -64,7 +76,17 @@ const projects = [
     link: "https://github.com/Joseph89155/inventory-system",
   },
   {
-    id: 5,
+    id: 6,
+    title: "Cafeteria Management System",
+    category: "Web Dev",
+    description:
+      "This is a simple Cafeteria Management System implemented in C. The system allows users to manage a menu of food items, place orders, and perform administrative tasks such as adding, editing, and deleting food items. The system also includes features to display order summaries, manage a stack of orders for each table, and process orders from a queue.",
+    techStack: ["C"],
+    image: cafeImg,
+    link: "https://github.com/Joseph89155/Cafeteria-System-C",
+  },
+  {
+    id: 7,
     title: "Bike Sales Excel Dashboard",
     category: "Data Analysis",
     description:
@@ -74,7 +96,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Bike-Sales-Excel-Dashboard",
   },
   {
-    id: 6,
+    id: 8,
     title: "Data Professional Survey Power BI Dashboard",
     category: "Data Analysis",
     description:
@@ -84,7 +106,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Data-Professional-Survey-Power-BI-Analysis-Project",
   },
   {
-    id: 7,
+    id: 9,
     title: "Airbnb Tableau Dashboard",
     category: "Data Analysis",
     description:
@@ -94,7 +116,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Airbnb-Tableau-Data-Analysis-Project",
   },
   {
-    id: 8,
+    id: 10,
     title: "Layoffs MySQL Data Cleaning",
     category: "Data Analysis",
     description:
@@ -104,7 +126,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Layoffs-Data-Cleaning-Project-MySQL-",
   },
   {
-    id: 9,
+    id: 11,
     title: "Health Analytics Full Project (SQL, BI, Excel)",
     category: "Data Analysis",
     description:
@@ -114,7 +136,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Health-Analytics-Project-SQL-BI-Excel-",
   },
     {
-    id: 10,
+    id: 12,
     title: "Titanic Survival EDA Project",
     category: "Data Analysis",
     description:
@@ -124,7 +146,7 @@ const projects = [
     link: "https://github.com/Joseph89155/exploratory-data-analysis-titanic",
   },
   {
-    id: 11,
+    id: 13,
     title: "Credit Card Fraud Detection",
     category: "Data Science",
     description:
@@ -134,7 +156,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Credit-Card-Fraud-Detection-using-Scikit-Learn-and-Snap-ML",
   },
     {
-    id: 12,
+    id: 14,
     title: "Covid-19 Forecasting and Geo Visualization",
     category: "Data Science",
     description:
@@ -144,7 +166,7 @@ const projects = [
     link: "https://github.com/Joseph89155/COVID-19-Forecasting-and-Geo-Visualization",
   },
   {
-    id: 13,
+    id: 15,
     title: "Loan Approval & Financial Risk Analysis",
     category: "Data Science",
     description:
@@ -154,7 +176,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Loan-Approval-Financial-Risk-Analysis-Python",
   },
   {
-    id: 14,
+    id: 16,
     title: "Hockey Web Scraper",
     category: "Data Science",
     description:
@@ -164,7 +186,7 @@ const projects = [
     link: "https://github.com/Joseph89155/hockey-webscraper",
   },
     {
-    id: 15,
+    id: 17,
     title: "Netflix Data Wrangling",
     category: "Data Science",
     description:
@@ -174,7 +196,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Netflix-Data-Wrangling",
   },
   {
-    id: 16,
+    id: 18,
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:
