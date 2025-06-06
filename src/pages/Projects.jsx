@@ -12,6 +12,7 @@ import inventoryImg from "../assets/inventory.jpg";
 import cafeImg from "../assets/cafe.jpg"
 import salesImg from "../assets/sales.jpg";
 import PowerBIImg from "../assets/powerbi.jpg";
+import HospitalityImg from "../assets/hospitality.jpg"
 import TableauImg from "../assets/tableau.jpg";
 import MySQLImg from "../assets/mysql.jpg";
 import HealthImg from "../assets/health.jpg";
@@ -107,6 +108,16 @@ const projects = [
   },
   {
     id: 9,
+    title: "Hospitality PowerBI Dashboard ",
+    category: "Data Analysis",
+    description:
+      "This project showcases an end-to-end Business Intelligence solution developed using Power BI for the hospitality industry. The dashboard provides deep insights into hotel performance metrics such as Revenue, RevPAR, Occupancy Rate, ADR, and Realisation %, enabling hotel managers and executives to make data-driven decisions.",
+    techStack: ["Power BI", "Excel", "Dash"],
+    image: HospitalityImg,
+    link: "https://github.com/Joseph89155/hospitality-powerbi-dashboard",
+  },
+  {
+    id: 10,
     title: "Airbnb Tableau Dashboard",
     category: "Data Analysis",
     description:
@@ -116,7 +127,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Airbnb-Tableau-Data-Analysis-Project",
   },
   {
-    id: 10,
+    id: 11,
     title: "Layoffs MySQL Data Cleaning",
     category: "Data Analysis",
     description:
@@ -126,7 +137,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Layoffs-Data-Cleaning-Project-MySQL-",
   },
   {
-    id: 11,
+    id: 12,
     title: "Health Analytics Full Project (SQL, BI, Excel)",
     category: "Data Analysis",
     description:
@@ -136,7 +147,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Health-Analytics-Project-SQL-BI-Excel-",
   },
     {
-    id: 12,
+    id: 13,
     title: "Titanic Survival EDA Project",
     category: "Data Analysis",
     description:
@@ -146,7 +157,7 @@ const projects = [
     link: "https://github.com/Joseph89155/exploratory-data-analysis-titanic",
   },
   {
-    id: 13,
+    id: 14,
     title: "Credit Card Fraud Detection",
     category: "Data Science",
     description:
@@ -155,8 +166,8 @@ const projects = [
     image: CreditcardImg,
     link: "https://github.com/Joseph89155/Credit-Card-Fraud-Detection-using-Scikit-Learn-and-Snap-ML",
   },
-    {
-    id: 14,
+  {
+    id: 15,
     title: "Covid-19 Forecasting and Geo Visualization",
     category: "Data Science",
     description:
@@ -166,7 +177,7 @@ const projects = [
     link: "https://github.com/Joseph89155/COVID-19-Forecasting-and-Geo-Visualization",
   },
   {
-    id: 15,
+    id: 16,
     title: "Loan Approval & Financial Risk Analysis",
     category: "Data Science",
     description:
@@ -176,7 +187,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Loan-Approval-Financial-Risk-Analysis-Python",
   },
   {
-    id: 16,
+    id: 17,
     title: "Hockey Web Scraper",
     category: "Data Science",
     description:
@@ -185,8 +196,8 @@ const projects = [
     image: HockeyImg,
     link: "https://github.com/Joseph89155/hockey-webscraper",
   },
-    {
-    id: 17,
+  {
+    id: 18,
     title: "Netflix Data Wrangling",
     category: "Data Science",
     description:
@@ -196,7 +207,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Netflix-Data-Wrangling",
   },
   {
-    id: 18,
+    id: 19,
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:
