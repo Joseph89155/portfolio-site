@@ -5,14 +5,15 @@ import { FaTimes } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 
 import portfolioImg from "../assets/portfolio.jpg";
-import expenseImg from "../assets/expense.jpg"
+import expenseImg from "../assets/expense.jpg";
 import portfolioImg2 from "../assets/portfolio2.jpg";
 import employweImg from "../assets/employwe.jpg";
 import inventoryImg from "../assets/inventory.jpg";
-import cafeImg from "../assets/cafe.jpg"
+import cafeImg from "../assets/cafe.jpg";
 import salesImg from "../assets/sales.jpg";
 import PowerBIImg from "../assets/powerbi.jpg";
-import HospitalityImg from "../assets/hospitality.jpg"
+import HospitalityImg from "../assets/hospitality.jpg";
+import HrImg from "../assets/HR.jpg";
 import TableauImg from "../assets/tableau.jpg";
 import MySQLImg from "../assets/mysql.jpg";
 import HealthImg from "../assets/health.jpg";
@@ -20,6 +21,7 @@ import TitanicImg from "../assets/titanic.jpg";
 import CreditcardImg from "../assets/credit.jpg";
 import ForecastImg from "../assets/forecast.jpg";
 import RiskImg from "../assets/risk.jpg";
+import houseImg from "../assets/House Price.jpg";
 import HockeyImg from "../assets/hockey.jpg";
 import NetflixImg from "../assets/netflix.jpg";
 import AQIImg from "../assets/aqi.jpg";
@@ -118,6 +120,16 @@ const projects = [
   },
   {
     id: 10,
+    title: "tableau-hr-dashboard",
+    category: "Data Analysis",
+    description:
+      "This project was built to support HR managers in monitoring workforce trends and performance using a comprehensive Tableau dashboard. It combines summary visualizations with employee-level filtering for data-driven decision-making.",
+    techStack: ["Tableau", "Excel", "Dash"],
+    image: HrImg,
+    link: "https://github.com/Joseph89155/tableau-hr-dashboard",
+  },
+  {
+    id: 11,
     title: "Airbnb Tableau Dashboard",
     category: "Data Analysis",
     description:
@@ -127,7 +139,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Airbnb-Tableau-Data-Analysis-Project",
   },
   {
-    id: 11,
+    id: 12,
     title: "Layoffs MySQL Data Cleaning",
     category: "Data Analysis",
     description:
@@ -137,7 +149,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Layoffs-Data-Cleaning-Project-MySQL-",
   },
   {
-    id: 12,
+    id: 13,
     title: "Health Analytics Full Project (SQL, BI, Excel)",
     category: "Data Analysis",
     description:
@@ -147,7 +159,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Health-Analytics-Project-SQL-BI-Excel-",
   },
     {
-    id: 13,
+    id: 14,
     title: "Titanic Survival EDA Project",
     category: "Data Analysis",
     description:
@@ -157,7 +169,7 @@ const projects = [
     link: "https://github.com/Joseph89155/exploratory-data-analysis-titanic",
   },
   {
-    id: 14,
+    id: 15,
     title: "Credit Card Fraud Detection",
     category: "Data Science",
     description:
@@ -167,7 +179,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Credit-Card-Fraud-Detection-using-Scikit-Learn-and-Snap-ML",
   },
   {
-    id: 15,
+    id: 16,
     title: "Covid-19 Forecasting and Geo Visualization",
     category: "Data Science",
     description:
@@ -177,7 +189,7 @@ const projects = [
     link: "https://github.com/Joseph89155/COVID-19-Forecasting-and-Geo-Visualization",
   },
   {
-    id: 16,
+    id: 17,
     title: "Loan Approval & Financial Risk Analysis",
     category: "Data Science",
     description:
@@ -187,7 +199,17 @@ const projects = [
     link: "https://github.com/Joseph89155/Loan-Approval-Financial-Risk-Analysis-Python",
   },
   {
-    id: 17,
+    id: 18,
+    title: "House-price-prediction",
+    category: "Data Science",
+    description:
+      "This project demonstrates how to build a simple linear regression model to predict house prices using Python and Scikit-learn. It follows the entire data science workflow—from data loading and exploration, to training, evaluating, and visualizing a model based on house area (square footage). The dataset used contains just two columns: area and price, making it a great entry point into supervised learning.",
+    techStack: ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
+    image: houseImg,
+    link: "https://github.com/Joseph89155/house-price-prediction",
+  },
+  {
+    id: 19,
     title: "Hockey Web Scraper",
     category: "Data Science",
     description:
@@ -197,7 +219,7 @@ const projects = [
     link: "https://github.com/Joseph89155/hockey-webscraper",
   },
   {
-    id: 18,
+    id: 20,
     title: "Netflix Data Wrangling",
     category: "Data Science",
     description:
@@ -207,7 +229,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Netflix-Data-Wrangling",
   },
   {
-    id: 19,
+    id: 21,
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:
