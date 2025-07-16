@@ -21,7 +21,9 @@ import TitanicImg from "../assets/titanic.jpg";
 import CreditcardImg from "../assets/credit.jpg";
 import ForecastImg from "../assets/forecast.jpg";
 import RiskImg from "../assets/risk.jpg";
+import MLOPImg from "../assets/real estate.jpg";
 import houseImg from "../assets/House Price.jpg";
+import WineImg from "../assets/wine.jpg";
 import HockeyImg from "../assets/hockey.jpg";
 import NetflixImg from "../assets/netflix.jpg";
 import AQIImg from "../assets/aqi.jpg";
@@ -200,6 +202,16 @@ const projects = [
   },
   {
     id: 18,
+    title: "MLOPs housing price prediction",
+    category: "Data Science",
+    description:
+      "This project showcases an end-to-end machine learning workflow for predicting median housing prices in California. Using the 1990 California census data, we train a regression model that learns patterns from demographic and geographic attributes to predict house values.Built with MLOps principles in mind, the project includes preprocessing, pipeline construction, hyperparameter tuning, model evaluation, and deployment through a simple Flask API.",
+    techStack: ["Python", "Pandas", "Matplotlib", "Dash"],
+    image: MLOPImg,
+    link: "https://github.com/Joseph89155/mlops-housing-price-prediction",
+  },
+  {
+    id: 19,
     title: "House-price-prediction",
     category: "Data Science",
     description:
@@ -209,7 +221,17 @@ const projects = [
     link: "https://github.com/Joseph89155/house-price-prediction",
   },
   {
-    id: 19,
+    id: 20,
+    title: "Wine classification",
+    category: "Data Science",
+    description:
+      "This project demonstrates the application of supervised machine learning models to classify wines based on their chemical properties using the Wine dataset from Scikit-learn. The dataset includes 13 features derived from chemical analysis and aims to classify wines into one of three cultivars. We implement, evaluate, and compare the performance of six classification algorithms under similar conditions to determine the most effective model for this task.",
+    techStack: ["Python", "Pandas", "Scikit-learn", "Dash"],
+    image: WineImg,
+    link: "https://github.com/Joseph89155/wine-classification-ml",
+  },
+  {
+    id: 21,
     title: "Hockey Web Scraper",
     category: "Data Science",
     description:
@@ -219,7 +241,7 @@ const projects = [
     link: "https://github.com/Joseph89155/hockey-webscraper",
   },
   {
-    id: 20,
+    id: 22,
     title: "Netflix Data Wrangling",
     category: "Data Science",
     description:
@@ -229,7 +251,7 @@ const projects = [
     link: "https://github.com/Joseph89155/Netflix-Data-Wrangling",
   },
   {
-    id: 21,
+    id: 23,
     title: "Air Quality Index (AQI) Analysis",
     category: "Data Science",
     description:
