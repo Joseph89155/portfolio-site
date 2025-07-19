@@ -27,6 +27,7 @@ import WineImg from "../assets/wine.jpg";
 import HockeyImg from "../assets/hockey.jpg";
 import NetflixImg from "../assets/netflix.jpg";
 import AQIImg from "../assets/aqi.jpg";
+import ImageImg from "../assets/Image.jpg";
 
 // Projects Data
 const projects = [
@@ -233,7 +234,7 @@ const projects = [
   {
     id: 21,
     title: "Hockey Web Scraper",
-    category: "Data Science",
+    category: "Data Analysis",
     description:
       "This project is a Python-based web scraper that extracts hockey team statistics from Site. It demonstrates how to automate data gathering using requests, BeautifulSoup, and pandas. The scraper collects structured data from multiple pages using pagination and stores it in a clean DataFrame, which is then exported to a .csv file fo further decision making.",
     techStack: ["Python", "Pandas", "Request", "BeautifulSoup"],
@@ -243,7 +244,7 @@ const projects = [
   {
     id: 22,
     title: "Netflix Data Wrangling",
-    category: "Data Science",
+    category: "Data Analysis",
     description:
       "The goal of this project is to transform the messy Netflix dataset into a clean, consistent, and analysis-ready format",
     techStack: ["Python", "Pandas", "Request"],
@@ -259,6 +260,16 @@ const projects = [
     techStack: ["Python", "Pandas", "Matplotlib", "Dash"],
     image: AQIImg,
     link: "https://github.com/Joseph89155/Global-Air-Quality-Index-AQ-Python",
+  },
+    {
+    id: 24,
+    title: "Image Classification with Artificial Neural Networks",
+    category: "Data Science",
+    description:
+      "This project focuses on building and training an Artificial Neural Network (ANN) using TensorFlow/Keras to classify handwritten digits from the MNIST dataset. The MNIST dataset is a benchmark in the field of machine learning and computer vision, containing 70,000 grayscale images of handwritten digits (0 to 9). Each image is 28x28 pixels in size, and the dataset is split into 60,000 training images and 10,000 testing images.",
+    techStack: ["Python", "TensorFlow", "Keras", "Scikit-learn", "Matplotlib", "Dash"],
+    image: ImageImg,
+    link: "https://github.com/Joseph89155/Digit-classification-using-ANN",
   },
 ];
 
